@@ -7,6 +7,7 @@ const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#about", label: "Who We Are" },
   { href: "#verticals", label: "Our Innovations" },
+  { href: "#suryamrut", label: "Suryamrut" },
   { href: "#leadership", label: "Leadership" },
   { href: "#contact", label: "Contact" },
 ];

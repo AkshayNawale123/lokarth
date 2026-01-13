@@ -78,10 +78,10 @@ export const Verticals = () => {
             Our Innovations
           </span>
           <h2 className="font-heading font-bold text-3xl md:text-5xl text-foreground mt-3">
-            Three Pillars of <span className="text-gradient-gold">Change</span>
+            Four Pillars of <span className="text-gradient-gold">Change</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            We focus on three critical verticals where sustainable innovation can
+            We focus on four critical verticals where sustainable innovation can
             create the most significant positive impact on humanity and the planet.
           </p>
         </motion.div>
