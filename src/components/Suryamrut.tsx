@@ -71,13 +71,13 @@ const productFeatures = [
   "Diabetic-safe formulation"
 ];
 
-export const Suryamrut = () => {
+export const SuryAmrit = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
     <section 
-      id="suryamrut" 
+      id="suryamrit"
       className="section-padding bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 relative overflow-hidden" 
       ref={ref}
     >
@@ -100,7 +100,7 @@ export const Suryamrut = () => {
             Vertical D: Nutraceuticals
           </span>
           <h2 className="font-heading font-bold text-3xl md:text-5xl text-foreground mt-3">
-            <span className="text-gradient-gold">Suryamrut</span>™
+            <span className="text-gradient-gold">SuryAmrit</span>™
           </h2>
           <p className="text-xl md:text-2xl font-heading font-medium text-foreground/80 mt-4">
             The Grace of Ghee. The Power of the Sun.
@@ -132,7 +132,7 @@ export const Suryamrut = () => {
             </div>
             <p className="text-foreground/80 leading-relaxed">
               We address this critical statistic by reimagining how the body absorbs sunlight. 
-              Suryamrut™ combines <strong>Lichen-based Vitamin D3</strong> (100% Plant-Based) with a 
+              SuryAmrit™ combines <strong>Lichen-based Vitamin D3</strong> (100% Plant-Based) with a 
               proprietary <strong>Ghee-Based Nutrient Delivery System</strong>.
             </p>
           </div>
@@ -184,7 +184,7 @@ export const Suryamrut = () => {
             </h3>
             <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
               {[
-                { icon: Sun, label: "Sunlight / Suryamrut™", color: "from-yellow-400 to-amber-500" },
+                { icon: Sun, label: "Sunlight / SuryAmrit™", color: "from-yellow-400 to-amber-500" },
                 { icon: "→", label: "", color: "" },
                 { label: "Skin Absorption", color: "from-amber-400 to-orange-400" },
                 { icon: "→", label: "", color: "" },
@@ -318,7 +318,7 @@ export const Suryamrut = () => {
                 Rooted in Ayurvedic Wisdom
               </h3>
               <p className="text-primary-foreground/90 max-w-2xl mx-auto text-lg leading-relaxed">
-                Suryamrut honors the ancient Ayurvedic understanding of <strong>Agni</strong> (digestive fire) 
+                SuryAmrit honors the ancient Ayurvedic understanding of <strong>Agni</strong> (digestive fire) 
                 and <strong>Ojas</strong> (vital essence). Ghee, revered for millennia as the ultimate carrier 
                 of nutrients, now delivers the power of the sun directly to your cells.
               </p>
