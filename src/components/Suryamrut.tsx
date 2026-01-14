@@ -1,65 +1,65 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { 
-  Sun, 
-  Droplets, 
-  Heart, 
-  Brain, 
-  Bone, 
-  Shield, 
-  CheckCircle2, 
+import {
+  Sun,
+  Droplets,
+  Heart,
+  Brain,
+  Bone,
+  Shield,
+  CheckCircle2,
   Leaf,
   Baby,
   Briefcase,
   Users,
-  Sparkles
+  Sparkles,
 } from "lucide-react";
 
 const benefits = [
   {
     icon: Bone,
     title: "Bone Health",
-    description: "Enhances Calcium absorption for stronger bones"
+    description: "Enhances Calcium absorption for stronger bones",
   },
   {
     icon: Shield,
     title: "Immunity",
-    description: "Modulates immune response naturally"
+    description: "Modulates immune response naturally",
   },
   {
     icon: Heart,
     title: "Cardiovascular",
-    description: "Supports endothelial function and arterial health"
+    description: "Supports endothelial function and arterial health",
   },
   {
     icon: Brain,
     title: "Cognitive",
-    description: "Supports brain development and mental wellness"
-  }
+    description: "Supports brain development and mental wellness",
+  },
 ];
 
 const targetAudience = [
   {
     icon: Baby,
     label: "Pediatrics",
-    description: "Growth & skeletal support"
+    description: "Growth & skeletal support",
   },
   {
     icon: Briefcase,
     label: "Adult Professionals",
-    description: "Mental wellness & cardiovascular health"
+    description: "Mental wellness & cardiovascular health",
   },
   {
     icon: Users,
     label: "Geriatrics",
-    description: "Fall prevention and bone density"
+    description: "Fall prevention and bone density",
   },
   {
     icon: Leaf,
     label: "Ethical Consumers",
-    description: "Vegans looking for non-animal D3 sources"
-  }
+    description: "Vegans looking for non-animal D3 sources",
+  },
 ];
 
 const productFeatures = [
@@ -68,7 +68,7 @@ const productFeatures = [
   "Zero sugar, zero cholesterol, free from synthetic fats",
   "FSSAI Approved Health Supplement",
   "Safe for all ages (Kids 1+ to Geriatrics)",
-  "Diabetic-safe formulation"
+  "Diabetic-safe formulation",
 ];
 
 export const SuryAmrit = () => {
@@ -76,9 +76,9 @@ export const SuryAmrit = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section 
+    <section
       id="suryamrit"
-      className="section-padding bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 relative overflow-hidden" 
+      className="section-padding bg-gradient-to-br from-amber-50 via-yellow-50 to-orange-50 relative overflow-hidden"
       ref={ref}
     >
       {/* Background decorative elements */}
@@ -105,9 +105,7 @@ export const SuryAmrit = () => {
           <p className="text-xl md:text-2xl font-heading font-medium text-foreground/80 mt-4">
             The Grace of Ghee. The Power of the Sun.
           </p>
-          <p className="text-muted-foreground mt-2 text-lg">
-            Next-Gen Bio-Delivery System for Vitamin D3
-          </p>
+          <p className="text-muted-foreground mt-2 text-lg">Next-Gen Bio-Delivery System for Vitamin D3</p>
         </motion.div>
 
         {/* The Problem & Innovation */}
@@ -121,19 +119,17 @@ export const SuryAmrit = () => {
           <div className="bg-card rounded-3xl p-8 shadow-lg border border-border/50">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-16 h-16 rounded-2xl bg-gradient-to-r from-red-500 to-orange-500 flex items-center justify-center shadow-lg">
-                <span className="text-3xl font-bold text-white">82%</span>
+                <span className="text-2xl font-bold text-white">82%</span>
               </div>
               <div>
-                <h3 className="font-heading font-bold text-xl text-foreground">
-                  The Critical Challenge
-                </h3>
+                <h3 className="font-heading font-bold text-xl text-foreground">The Critical Challenge</h3>
                 <p className="text-muted-foreground">of Indians are Vitamin D deficient</p>
               </div>
             </div>
             <p className="text-foreground/80 leading-relaxed">
-              We address this critical statistic by reimagining how the body absorbs sunlight. 
-              SuryAmrit™ combines <strong>Lichen-based Vitamin D3</strong> (100% Plant-Based) with a 
-              proprietary <strong>Ghee-Based Nutrient Delivery System</strong>.
+              We address this critical statistic by reimagining how the body absorbs sunlight. SuryAmrit™ combines{" "}
+              <strong>Lichen-based Vitamin D3</strong> (100% Plant-Based) with a proprietary{" "}
+              <strong>Ghee-Based Nutrient Delivery System</strong>.
             </p>
           </div>
 
@@ -161,8 +157,8 @@ export const SuryAmrit = () => {
                   <div>
                     <h4 className="font-semibold text-lg">Ethical Source</h4>
                     <p className="text-white/90 text-sm mt-1">
-                      Unlike traditional lanolin (sheep's wool) derived D3, we use Lichen (fungus + algae), 
-                      making it bioidentical yet 100% vegetarian and sustainable.
+                      Unlike traditional lanolin (sheep's wool) derived D3, we use Lichen (fungus + algae), making it
+                      bioidentical yet 100% vegetarian and sustainable.
                     </p>
                   </div>
                 </div>
@@ -191,25 +187,35 @@ export const SuryAmrit = () => {
                 { label: "Liver (25-OH D3)", color: "from-orange-400 to-red-400" },
                 { icon: "→", label: "", color: "" },
                 { label: "Kidney (Active D3)", color: "from-red-400 to-pink-400" },
-              ].map((step, index) => (
+              ].map((step, index) =>
                 step.icon === "→" ? (
-                  <div key={index} className="hidden md:block text-3xl text-accent font-bold">→</div>
+                  <div key={index} className="hidden md:block text-3xl text-accent font-bold">
+                    →
+                  </div>
                 ) : step.icon ? (
                   <div key={index} className="flex flex-col items-center gap-2">
-                    <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${step.color} flex items-center justify-center shadow-lg`}>
+                    <div
+                      className={`w-16 h-16 rounded-full bg-gradient-to-r ${step.color} flex items-center justify-center shadow-lg`}
+                    >
                       <step.icon className="w-8 h-8 text-white" />
                     </div>
-                    <span className="text-sm font-medium text-foreground/80 text-center max-w-[100px]">{step.label}</span>
+                    <span className="text-sm font-medium text-foreground/80 text-center max-w-[100px]">
+                      {step.label}
+                    </span>
                   </div>
                 ) : (
                   <div key={index} className="flex flex-col items-center gap-2">
-                    <div className={`w-16 h-16 rounded-full bg-gradient-to-r ${step.color} flex items-center justify-center shadow-lg`}>
-                      <span className="text-xs font-bold text-white text-center px-2">{step.label.split(' ')[0]}</span>
+                    <div
+                      className={`w-16 h-16 rounded-full bg-gradient-to-r ${step.color} flex items-center justify-center shadow-lg`}
+                    >
+                      <span className="text-xs font-bold text-white text-center px-2">{step.label.split(" ")[0]}</span>
                     </div>
-                    <span className="text-sm font-medium text-foreground/80 text-center max-w-[100px]">{step.label}</span>
+                    <span className="text-sm font-medium text-foreground/80 text-center max-w-[100px]">
+                      {step.label}
+                    </span>
                   </div>
-                )
-              ))}
+                ),
+              )}
             </div>
           </div>
         </motion.div>
@@ -236,12 +242,8 @@ export const SuryAmrit = () => {
                 <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-amber-400 to-orange-500 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <benefit.icon className="w-7 h-7 text-white" />
                 </div>
-                <h4 className="font-heading font-semibold text-lg text-foreground mb-2">
-                  {benefit.title}
-                </h4>
-                <p className="text-muted-foreground text-sm">
-                  {benefit.description}
-                </p>
+                <h4 className="font-heading font-semibold text-lg text-foreground mb-2">{benefit.title}</h4>
+                <p className="text-muted-foreground text-sm">{benefit.description}</p>
               </motion.div>
             ))}
           </div>
@@ -272,8 +274,8 @@ export const SuryAmrit = () => {
             </div>
             <div className="mt-6 p-4 bg-gradient-to-r from-amber-100 to-orange-100 rounded-xl border border-amber-200">
               <p className="text-sm text-foreground/80 italic">
-                <strong>Clean Label Philosophy:</strong> Daily Micro-dosing (600 IU) aligned with RDA standards, 
-                proven to offer significantly better outcomes than large monthly bolus doses.
+                <strong>Clean Label Philosophy:</strong> Daily Micro-dosing (600 IU) aligned with RDA standards, proven
+                to offer significantly better outcomes than large monthly bolus doses.
               </p>
             </div>
           </div>
@@ -314,13 +316,11 @@ export const SuryAmrit = () => {
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-amber-500/20 rounded-full blur-3xl" />
             <div className="relative z-10">
               <Sun className="w-16 h-16 mx-auto mb-6 text-accent animate-pulse-slow" />
-              <h3 className="font-heading font-bold text-2xl md:text-3xl mb-4">
-                Rooted in Ayurvedic Wisdom
-              </h3>
+              <h3 className="font-heading font-bold text-2xl md:text-3xl mb-4">Rooted in Ayurvedic Wisdom</h3>
               <p className="text-primary-foreground/90 max-w-2xl mx-auto text-lg leading-relaxed">
-                SuryAmrit honors the ancient Ayurvedic understanding of <strong>Agni</strong> (digestive fire) 
-                and <strong>Ojas</strong> (vital essence). Ghee, revered for millennia as the ultimate carrier 
-                of nutrients, now delivers the power of the sun directly to your cells.
+                SuryAmrit honors the ancient Ayurvedic understanding of <strong>Agni</strong> (digestive fire) and{" "}
+                <strong>Ojas</strong> (vital essence). Ghee, revered for millennia as the ultimate carrier of nutrients,
+                now delivers the power of the sun directly to your cells.
               </p>
               <div className="mt-8 inline-flex items-center gap-2 bg-accent/20 px-6 py-3 rounded-full">
                 <Shield className="w-5 h-5 text-accent" />
