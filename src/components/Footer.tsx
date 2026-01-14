@@ -10,20 +10,15 @@ export const Footer = () => {
           {/* Brand */}
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <img
-                src={lokarthLogo}
-                alt="Lokarth Logo"
-                className="h-12 w-12 object-contain rounded-full"
-              />
+              <img src={lokarthLogo} alt="Lokarth Logo" className="h-12 w-12 object-contain rounded-full" />
               <div>
                 <span className="font-heading font-bold text-xl">Lokarth</span>
                 <p className="text-sm text-background/60">Lokpeeth Foundation</p>
               </div>
             </div>
             <p className="text-background/60 text-sm max-w-sm">
-              Innovations for People. Bridging the gap between stagnation and
-              regeneration through sustainable technologies in Energy, Healthcare,
-              and Agriculture.
+              Innovations for People. Bridging the gap between stagnation and regeneration through sustainable
+              technologies in Energy, Healthcare, and Agriculture.
             </p>
           </div>
 
@@ -70,7 +65,10 @@ export const Footer = () => {
                 <span className="text-background/60 text-sm">Raypure - Healthcare</span>
               </li>
               <li>
-                <span className="text-background/60 text-sm">Lokarth Innovations - Agriculture</span>
+                <span className="text-background/60 text-sm">Gau Mandir - Agriculture</span>
+              </li>
+              <li>
+                <span className="text-background/60 text-sm">SuryAmrit - Nutraceuticals</span>
               </li>
             </ul>
           </div>
@@ -78,12 +76,8 @@ export const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-background/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-background/60 text-sm">
-            © {currentYear} Lokpeeth Foundation. All rights reserved.
-          </p>
-          <p className="text-background/60 text-sm">
-            Section 8 Non-Profit Organization | India
-          </p>
+          <p className="text-background/60 text-sm">© {currentYear} Lokpeeth Foundation. All rights reserved.</p>
+          <p className="text-background/60 text-sm">Section 8 Non-Profit Organization | India</p>
         </div>
       </div>
     </footer>
