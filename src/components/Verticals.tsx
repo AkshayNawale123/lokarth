@@ -43,7 +43,7 @@ const verticals = [
   {
     id: "innovations",
     icon: Leaf,
-    name: "Lokarth Innovations",
+    name: "Gau Mandir",
     category: "Agriculture",
     headline: "Nourish Naturally",
     description:
@@ -74,15 +74,13 @@ export const Verticals = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-accent font-semibold text-sm uppercase tracking-wider">
-            Our Innovations
-          </span>
+          <span className="text-accent font-semibold text-sm uppercase tracking-wider">Our Innovations</span>
           <h2 className="font-heading font-bold text-3xl md:text-5xl text-foreground mt-3">
             Four Pillars of <span className="text-gradient-gold">Change</span>
           </h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            We focus on four critical verticals where sustainable innovation can
-            create the most significant positive impact on humanity and the planet.
+            We focus on four critical verticals where sustainable innovation can create the most significant positive
+            impact on humanity and the planet.
           </p>
         </motion.div>
 
@@ -106,12 +104,8 @@ export const Verticals = () => {
                       <vertical.icon size={28} className="text-white" />
                     </div>
                     <div>
-                      <span className="text-sm text-muted-foreground font-medium">
-                        {vertical.category}
-                      </span>
-                      <h3 className="font-heading font-bold text-2xl text-foreground">
-                        {vertical.name}
-                      </h3>
+                      <span className="text-sm text-muted-foreground font-medium">{vertical.category}</span>
+                      <h3 className="font-heading font-bold text-2xl text-foreground">{vertical.name}</h3>
                     </div>
                   </div>
 
@@ -119,9 +113,7 @@ export const Verticals = () => {
                     {vertical.headline}
                   </p>
 
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    {vertical.description}
-                  </p>
+                  <p className="text-muted-foreground mb-6 leading-relaxed">{vertical.description}</p>
 
                   <div className="space-y-3 mb-6">
                     {vertical.features.map((feature, i) => (
